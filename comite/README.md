@@ -23,7 +23,7 @@ estará atuando na NodeConfBR 2015.
 
  * Toda e qualquer reunião do comitê deve ser pública.
 
- * Todo membro deve ter um arquivo neste repositório contendo suas informações
+ * Todo membro deve ter um arquivo nesta pasta contendo suas informações
  de acordo com o [template.md][2] nomeado da seguinte forma e no formato
  markdown: **{nome do comitê}-{primeiro nome}-{ultimo nome}.md**
 
