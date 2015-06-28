@@ -25,7 +25,7 @@ participar ativamente da resolução de problemas e decisões da conferência.
 ### Principais tópicos
 
   * [Local do evento][2]: ajude a definir a localização do evento.
-  * [Data do evento][3]: 5 e 6 de Setembro de 2015.
+  * [Data do evento][3]: 7 e 8 de Novembro de 2015.
   * ~~[Logotipo][4]: ajude a definir a identidade visual da conferência.~~
   * [Organização e organizadores][5]: como o evento deve ser organizado? Quem
   são as pessoas responsáveis por cada aspecto do evento?
