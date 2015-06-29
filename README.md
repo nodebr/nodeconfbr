@@ -12,6 +12,9 @@ da **NodeConf BR 2015**.
 Qualquer pessoa interessada em ajudar pode acessar as [issues][0] e começar a
 participar ativamente da resolução de problemas e decisões da conferência.
 
+### Call For Papers ABERTO
+Aqueles interessados em enviar propostas para a NodeConfBR já estão abertas as incrições. Só entrar neste [link][6] e se inscrever.
+
 ### Canais de comunicação
 
   * A [página de issues][0] é nosso canal oficinal para tomada de decisões e
@@ -32,7 +35,22 @@ participar ativamente da resolução de problemas e decisões da conferência.
 
 ### Comitê de organização
 
-Ainda não definido, [ajude-nos][5].
+#### Programação
+* [Marcos Bérgamo](http://twitter.com/thebergamo)
+
+#### Comercial 
+* [David Lojudice Sobrinho](http://twitter.com/dalssoft)
+* [Heitor Sergent](http://twitter.com/heitorburger)
+
+#### Financeiro 
+* [Gabriel Marquez](http://twitter.com/gblmarquez)
+* [Eric Douglas](http://twitter.com/ericdouglas_)
+
+#### Infraestrutura
+* [Willian Renato Sabião](http://twitter.com/willianjedai)
+
+#### Organização
+* [Alan Hoffmeister](http://twitter.com/alan_hoff)
 
 ### Licença ISC
 
@@ -56,3 +74,4 @@ THIS SOFTWARE.
 [3]: https://github.com/nodebr/nodeconfbr/issues/9
 [4]: https://github.com/nodebr/nodeconfbr/issues/6
 [5]: https://github.com/nodebr/nodeconfbr/issues/7
+[6]: http://br.nodeconf.org
