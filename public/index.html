@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NODECONF BR 2016</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/ss-standard.css" media="screen" title="no title" charset="utf-8">
+  <link rel="icon" type="image/png" href="img/Mask.png">
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="/assets/css/animate.min.css" type="text/css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/creative.css" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/brnode" target="_blank"><img src="/assets/img/fb.svg" alt="facebook" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nodebr" target="_blank"><img src="/assets/img/twitter.svg" alt="github" /></a>
+            </li>
+            <li>
+              <a href="https://github.com/nodeconf/brazil" target="_blank"><img src="/assets/img/github.svg" alt="github" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">{{ $t('page.about') }}</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#speakers">{{ $t('page.speakers') }}</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#agenda">{{ $t('page.schedule') }}</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#local">{{ $t('page.place') }}</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#sponsorships">{{ $t('page.sponsorships') }}</a>
+          </li>
+          <li>
+            <a href="#" @click.prevent="modal('modal-code-of-conduct')">{{ $t('page.code_of_conduct') }}</a>
+          </li>
+
+          <a class="btn-buyticket1" href="http://www.eventick.com.br/nodeconfbr" target="_blank" role="button">{{ $t('page.buy_tickets') }}</a>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <header id="home">
+    <div class="header-content">
+      <div class="header-content-inner">
+        <img src="/assets/img/logonovo.svg" alt="Logo NodeConf Brazil" class="logo" />
+        <p id="translate" class="sliding-middle-out pointer" v-on:click.prevent="toggleLocale()">{{ $t('page.read_in_locale') }}</p>
+        <p class="event-title">NODECONF<span>BRAZIL</span>2016</p>
+        <div class="row dt-local">
+          <div class="col-md-6 col-xs-6 date">
+            <span class="ss-calendar"></span><span>{{ $t('page.date') }}</span>
+          </div>
+          <div class="col-md-6 col-xs-6 local">
+            <span class="ss-location"></span><span>{{ $t('page.location') }}</span>
+          </div>
+        </div>
+        <a href="http://www.eventick.com.br/nodeconfbr" target="_blank" class="btn btn-success btn-xl"><img src="/assets/img/ticket.svg" alt="" class="ticket" /> {{ $t('page.buy_tickets_now') }}</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-xs-12">
+          <img src="/assets/img/ilustra.svg" alt="Ilustra" />
+          <div class="row">
+            <div class="col-lg-12 col-xs-10 col-xs-offset-1">
+              <h2 class="section-heading">{{ $t('page.about_the_event') }}</h2>
+            </div>
+          </div>
+          <hr class="light">
+        </div>
+        <div class="col-lg-1 col-xs-12">
+
+        </div>
+        <div class="col-lg-7 col-xs-12">
+          {{{ $t('page.event_description') }}}
+        </div>
+        <div class="col-md-3 col-xs-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center speakers-heading">
+          <h2 class="section-heading">{{ $t('page.speakers') }}</h2>
+          <hr class="light">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 text-center" v-for="speaker in speakers">
+          <div class="service-box" v-bind="{ id: speaker.slug }">
+            <a href="#" @click.prevent="modal('modal-speaker-' + speaker.slug)"><img v-bind="{ src: speaker.image, alt: speaker.name }" /></a>
+            <h3>{{speaker.name}}</h3>
+            <p class="text-muted">{{speaker.job}}</p>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="row col-xs-12">
+          <a href="http://www.eventick.com.br/nodeconfbr" target="_blank" class="btn btn-success btn-buyticket2 btn-xl page-scroll">{{ $t('page.buy_tickets_v2') }}</a>
+        </div>
+        <div class="col-lg-2 col-lg-offset-5 col-xs-12">
+          <a href="https://docs.google.com/forms/d/1wcN4q2O4RE1qJD1SIP9ZnL-BN5sGaVsd4HYb2WBBl8I/viewform?c=0&w=1" id="call-papers" target="_blank" class="sliding-middle-out">CALL FOR PAPERS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="local">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 text-center speakers-heading text-center">
+          <h2 class="section-heading">{{ $t('page.where_title') }}</h2>
+          <hr class="light">
+        </div>
+
+        <div class="col-lg-12 col-xs-12 text-center">
+          <p class="local-text">
+            {{ $t('page.where_description') }}
+          </p>
+        </div>
+        <div class="row col-xs-12">
+          <div class="col-lg-7">
+            <div class="row local-photos">
+              <div class="col-lg-6">
+                <img src="/assets/img/local-01.png" class="img-responsive" alt="Foto do local">
+              </div>
+              <div class="col-lg-6">
+                <img src="/assets/img/local-03.png" class="img-responsive" alt="Foto do local">
+              </div>
+            </div>
+            <div class="row local-photos">
+              <div class="col-lg-6">
+                <img src="/assets/img/local-04.png" class="img-responsive" alt="Foto do local">
+              </div>
+              <div class="col-lg-6">
+                <img src="/assets/img/local-05.png" class="img-responsive" alt="Foto do local">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xs-10">
+            <div class="row">
+
+              <a href="https://www.google.com.br/maps/place/Teatro+Shopping+Frei+Caneca/@-23.5539296,-46.6551045,17z/data=!3m1!4b1!4m2!3m1!1s0x94ce58353ca914ff:0x4af6638b77d81ab6?hl=en" target="_blank"><img src="/assets/img/mapa.png" class="img-responsive mapa" alt="Mapa do Evento"></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center col-xs-12">
+          <div class="row">
+            <a href="https://www.google.com.br/maps/place/Teatro+Shopping+Frei+Caneca/@-23.5539296,-46.6551045,17z/data=!3m1!4b1!4m2!3m1!1s0x94ce58353ca914ff:0x4af6638b77d81ab6?hl=en" target="_blank" class="btn btn-secondary btn-maps btn-xl page-scroll">{{ $t('page.open_map') }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsorships">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="sponsorships-heading">{{ $t('page.sponsorships') }}</h2>
+          <hr class="light">
+        </div>
+      </div>
+      <div class="row sponsorships-line">
+        <div class="col-lg-4 col-lg-offset-4">
+          <img src="/assets/img/uolhostnovo.png" class="img-responsive" alt="UOl Host" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="sponsorships-heading">APOIADORES</h2>
+          <hr class="light">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-xs-8 col-xs-offset-2 text-center">
+          <h2 class="section-heading">{{ $t('page.want_to_know_you') }}</h2>
+          <hr class="light">
+        </div>
+        <div class="col-lg-12 col-xs-12 text-center">
+          <p class="col-lg-8 col-lg-offset-2 contact-text">{{ $t('page.want_to_know_you_description') }}</p>
+        </div>
+        <div class="row col-xs-12 col-lg-12">
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="http://www.nodebr.us13.list-manage.com/subscribe/post?u=f41cb79fbdba2b03cac7aa65c&amp;id=0454bbb748" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="contactForm" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="col-lg-8 col-lg-offset-3 col-xs-12">
+                  <div class="mc-field-group input-group">
+                    <input type="email" value="" name="EMAIL" placeholder="{{ $t('page.want_to_know_more_about') }}" class="required email" id="mce-EMAIL">
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="ss-send input-group-addon"></button>
+                    <!-- <input type="button" name="subscribe" class="ss-send input-group-addon"> -->
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_f41cb79fbdba2b03cac7aa65c_0454bbb748" tabindex="-1" value="">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+        <div class="row col-xs-12">
+          <p class="email">{{ $t('page.doubts_contact') }}</p>
+        </div>
+      </div>
+  </section>
+
+  <div class="modal fade modal-fullscreen" id="modal-code-of-conduct">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-default pull-right" data-dismiss="modal">{{ $t('page.close') }}</button>
+        </div>
+        <div class="modal-body">
+          {{{ $t('page.code_of_conduct_description') }}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-fullscreen" v-for="speaker in speakers" v-bind="{ id: 'modal-speaker-' + speaker.slug }" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-default pull-right" data-dismiss="modal">{{ $t('page.close') }}</button>
+        </div>
+        <div class="modal-body">
+          <h1>{{speaker.name}}</h1>
+          <a v-for="(name, link) in speaker.social" class="speakers-social" v-bind="{ href: link }">{{name}}</a>
+          <p>{{{speaker.description}}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row col-xs-12">
+
+      <div class="col-lg-9">
+        <p class="footer-text">
+          {{ $t('page.footnote') }}
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p>@NODECONF BRAZIL 2016
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery -->
+  <script src="/assets/js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="/assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/assets/js/jquery.easing.min.js"></script>
+  <script src="/assets/js/jquery.fittext.js"></script>
+  <script src="/assets/js/wow.min.js"></script>
+  <script src="/assets/js/three.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="/assets/js/creative.js"></script>
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Vue.js app -->
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
